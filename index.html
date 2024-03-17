@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <div class="clock-container" style="background-color: #42af17; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); padding: 20px;">
+        <div class="clock" style="display: flex; font-size: 3rem; color: #333;">
+            <div id="hours" class="digit" style="font-family: fantasy;color:rgb(196, 187, 187); padding: 0.5rem; border-radius: 5px; background-color: #461aa5; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"></div>
+            <div class="divider" style="padding: 0.5rem; color: #666;">:</div>
+            <div id="minutes" class="digit" style="font-family: fantasy;color:rgb(0, 0, 0); padding: 0.5rem; border-radius: 5px; background-color: #0fe7cb; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"></div>
+            <div class="divider" style="padding: 0.5rem; color: #666;">:</div>
+            <div id="seconds" class="digit" style="font-family: fantasy;color:rgb(196, 187, 187); padding: 0.5rem; border-radius: 5px; background-color: #d61048; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Update the clock every second
+            setInterval(updateClock, 1000);
+
+            // Initial update
+            updateClock();
+        });
+
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+
+            $('#hours').text(hours);
+            $('#minutes').text(minutes);
+            $('#seconds').text(seconds);
+        }
+    </script>
+</body>
+</html>
