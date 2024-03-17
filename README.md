@@ -16,5 +16,8 @@ OUTPUT:
 ![image](https://github.com/abdullah7701/Digital-Web-Clock/assets/81309380/a8c0879e-f613-4b39-a8f1-8b580f6efc72)
 
 LIVE:
-![image](https://github.com/abdullah7701/Digital-Web-Clock/assets/81309380/f5d16bfe-0ad5-4510-a2cf-094cc2333b54)
+
+
+![image](https://github.com/abdullah7701/Digital-Web-Clock/assets/81309380/28208f48-57b8-440e-b38e-c7dc26f3a17e)
+
 
